@@ -19,7 +19,7 @@ public partial class DCentry : System.Web.UI.Page
 {
 
     int K = 0;
-    int j = 0;
+    int j = 1;
     DataTable Dt = new DataTable();
     SQLDB SqlObj = new SQLDB();
     BLTaxi objBL = new BLTaxi();
