@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeFile="Attendance.aspx.cs" Inherits="Attendance" Title="Employee Attendance" %>
+﻿<%@ Page Language="C#" Title="ATT Page" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeFile="Attendance.aspx.cs" Inherits="Attendance" Title="Employee Attendance" %>
 <%@ Register Assembly="AjaxControlToolkit" TagPrefix="asp" Namespace="AjaxControlToolkit"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
