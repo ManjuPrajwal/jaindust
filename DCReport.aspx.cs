@@ -25,6 +25,7 @@ public partial class DCReport : System.Web.UI.Page
     string ppp = string.Empty;
 
     int K = 0;
+    int L = 1;
     DataTable Dt = new DataTable();
     DataSet Ds = new DataSet();
     SQLDB SqlObj = new SQLDB();
