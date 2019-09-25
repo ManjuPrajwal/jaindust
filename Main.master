@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+<%@ Register Assembly="AjaxControlToolkit" TagPrefix="asp" Namespace="AjaxControlToolkit"%>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/local.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>   
+
+      <style>
+
+        div {
+            padding-bottom:20px;
+        }
+
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+   
+   
+
+  <asp:ToolkitScriptManager ID="tool" runat="server"></asp:ToolkitScriptManager>
+    
+
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>  
+                </button>
+                <a class="navbar-brand" href="DashBoard.aspx">JA INDUSTRIES</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                   <li><a href="DashBoard.aspx"> Dashboard</a></li>
+                    <li><a href="VendorMaster.aspx"> Vendor Master</a></li>
+                    <li><a href="PartMaster.aspx"> Part Master</a></li>
+                    
+                    <li><a href="EmployeeMaster.aspx"> Emp Master</a></li>
+              <%--       <li><a href="PartMaster.aspx"><i class="fa fa-font"></i>Part Master</a></li>--%>
+                    <li><a href="Materialmaster.aspx">Material Master</a></li>
+                    <li><a href="DCMasterView.aspx"> DC View</a></li>
+                    <li><a href="JobEntry.aspx">Daily Job Entry</a></li>
+               
+                    <li><a href="DCMaster.aspx">DC Master</a></li>
+                    <li><a href="InvoiceEntry.aspx"> Invoice Master</a></li>
+                    <li><a href="QuotationMaster.aspx"> Quotation Master</a></li>
+                   
+                   <%--fa fa-list-ol  For the Purpose of 'View or List ' --%>
+                   <%--fa fa-tasks-- For the Purpose of 'EntryPage'--%>
+                   <%--fa fa-globe--  For the Purpose of Showing Globe %>
+                   <%--fa fa-font For the Purose of  '  A '   --%>
+           d        <%--<li><a href="MaterialInwardView.aspx"> Inward View</a></li>--%>
+                   
+                  <li><a href="ReportContainer.aspx"> Reports</a></li>
+                   
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user">
+                     <li class="dropdown user-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>User Profile<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           
+                            <li class="divider"></li>
+                            <li><a href="Logout.aspx"><i class="fa fa-power-off"></i> Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+         
+    </div>
+
+     <div class="row text-center">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+
+</form>
+</body>
+
+</html>
